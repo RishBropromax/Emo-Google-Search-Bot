@@ -1,0 +1,36 @@
+{
+    "name": "Emo Google Search Bot Bot",
+    "description": "Powerfull Google Search Bot",
+    "repository": "https://github.com/RishBropromax/Emo-Google-Search-Bot",
+    "keywords": [
+        "Telegram Subscriber Counter Bot",
+        "Telegram Member Counter Bot",
+        "Real-Time Subscriber Counter",
+        "Telegram Channels And Groups",
+        "Telegram Bot"
+    ],
+    "env": {
+        "API_ID": {
+            "description": "Get from my.telegram.org/apps",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get from my.telegram.org/apps",
+            "required": true
+        },
+        "Bot ToKen": {
+            "description": "Your bot token from @BotFather",
+            "required": true
+      }
+    "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
